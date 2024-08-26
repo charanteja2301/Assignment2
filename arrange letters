@@ -1,0 +1,9 @@
+def arrange_letters(word):
+    normal_order = ''.join(sorted(word))
+    reverse_order = ''.join(sorted(word, reverse=True))
+    return normal_order, reverse_order
+
+word = "example"
+normal, reverse = arrange_letters(word)
+print("Normal Order:", normal)
+print("Reverse Order:", reverse)
