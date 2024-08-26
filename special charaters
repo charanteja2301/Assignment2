@@ -1,0 +1,10 @@
+import string
+
+def count_special_characters(statement):
+    special_characters = string.punctuation
+    count = sum(1 for char in statement if char in special_characters)
+    return count
+
+statement = "Hello, World! Welcome to Python programming @2023."
+special_char_count = count_special_characters(statement)
+print(f"Number of special characters: {special_char_count}")
