@@ -1,1 +1,10 @@
+def find_character(string, character):
+    for index, char in enumerate(string):
+        if char == character:
+            return f"Character '{character}' found at index: {index}"
+    return f"Character '{character}' not found in the string."
 
+input_string = "Hello, World!"
+input_character = "o"
+result = find_character(input_string, input_character)
+print(result)
