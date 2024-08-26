@@ -1,0 +1,6 @@
+def reverse_words(s: str) -> str:
+    return ' '.join(reversed(s.split()))
+
+input_string = "Hello World"
+reversed_string = reverse_words(input_string)
+print(reversed_string)  # Output: "World Hello"
