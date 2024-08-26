@@ -1,0 +1,11 @@
+def count_matching_characters(str1, str2):
+    if len(str1) != len(str2):
+        return "Strings must be of the same length."
+    
+    matches = sum(1 for a, b in zip(str1, str2) if a == b)
+    return matches
+
+string1 = "hello"
+string2 = "hallo"
+result = count_matching_characters(string1, string2)
+print(f"Number of matching characters: {result}")
