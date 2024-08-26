@@ -1,0 +1,16 @@
+def find_repeated_letters(word):
+    letter_count = {}
+    repeated_letters = set()
+
+    for letter in word:
+        if letter in letter_count:
+            letter_count[letter] += 1
+            repeated_letters.add(letter)
+        else:
+            letter_count[letter] = 1
+
+    return repeated_letters
+
+input_word = "programming"
+repeated = find_repeated_letters(input_word)
+print("Repeated letters:", repeated)
